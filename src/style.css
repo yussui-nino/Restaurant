@@ -1,0 +1,176 @@
+#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 150px ;
+    height: 100vh;
+}
+@font-face {
+    font-family: 'MainFont';
+    src: url('./mainfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'hThreeFont';
+    src: url('./hthree.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'hTwoFont';
+    src: url('./hTwo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'ThisFont';
+    src: url('./thisFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.main{
+    grid-row: 1/2;
+    background-color: #c54b34;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 6px #ffcb6f solid;
+    border-radius: 15px;
+}
+.main button{
+    width: 115px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: #ffcb6f;
+    font-size: 25px;
+    border-color: #c54b34;
+    font-family:'MainFont';
+    
+    
+}
+.main .welcoming{
+    align-self: center;
+    justify-self: center;
+    color:#ffcb6f;
+    font-family: 'MainFont';
+   
+    
+}
+.middle{
+    display: grid;
+    grid-row: 2/3;
+    grid-template-columns: 1fr 600px ;
+    grid-template-rows: 550px 600px 1fr;
+    background-color: #ffdcbe;
+}
+.middle h2{
+   
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 900px;
+    margin-left: 240px;
+    text-align: center;
+    display: flex; /* Added flex display */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center if needed */
+    height: 100%; /* Ensure it takes the full height of the grid row */
+    font-family: 'hTwoFont';
+}
+
+
+.middle img{
+    grid-column: 2/3;
+    grid-row: 1;
+    height: 500px;
+}
+.middle .foods{
+    grid-column: 1/4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.middle .foods .food {
+    width: 350px;
+    height: 350px;
+    border: 5px black solid;
+    gap: 150px;
+    margin-top: 40px;
+}
+.middle .foods .food img{
+    width: 350px;
+    height: 350px;
+    
+}
+
+h3{
+    font-family: 'ThisFont';
+}
+
+
+.last {
+    display: flex;
+    background-color: #c54b34;
+    border: 6px #ffcb6f solid;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.last h2{
+    font-family: 'MainFont';
+    color: #ffcb6f;
+}
+
+.middle .MidContainer{
+    display: grid;
+    grid-template-rows: 550px 550px 550px 550px 550px 550px 550px 550px ;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    justify-content: center;
+    align-items: center;
+}
+
+.MidContainer .menu{
+    height: 450px;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 650px 600px;
+    gap: 50px;
+    border: 6px #ffcb6f solid;
+    border-radius: 10px;
+    
+    
+}
+.menu img{
+    height: 450px;
+    width: 600px;
+}
+
+.menu h3{
+    font-family: 'hTwoFont';
+    align-items: center;
+    align-self: center;
+    font-size: 25px;
+    margin-bottom: 160px;
+   
+}
+
+.ContactMid{
+    grid-column: 1/4;
+    grid-row: 1/4;
+    height: 1000px;
+    width: 600px;
+    border: 6px #ffcb6f solid;
+    border-radius: 15px;
+    margin-left: 650px;
+    margin-top: 70px;
+    font-family: 'MainFont';
+    font-size: 18px;
+}
+
+.ContactMid img{
+    width: 600px;
+}
